@@ -3,7 +3,7 @@ project(ddg_bringup)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(ddg_multi_robot_planner REQUIRED)
+# find_package(ddg_multi_robot_planner REQUIRED)
 
 install(DIRECTORY launch
   # config
