@@ -9,7 +9,7 @@ import os
 
 
 def generate_launch_description():
-    single_launch = "False"
+    single_launch = "True"
     ddg_multi_robot_planner_package_share_directory = get_package_share_directory(
         "ddg_multi_robot_planner"
     )
@@ -48,7 +48,7 @@ def generate_launch_description():
     )
     offset = LaunchConfiguration(
         "offset",
-        default="[0.7, 0.95]",  # X axis Y axis
+        default="[0.7, 0.73]",  # X axis Y axis
     )
     original_map_size = LaunchConfiguration(
         "original_map_size",
