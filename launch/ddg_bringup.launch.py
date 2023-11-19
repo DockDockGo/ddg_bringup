@@ -9,7 +9,7 @@ import os
 
 
 def generate_launch_description():
-    single_launch = "True"
+    single_launch = "False"
     ddg_multi_robot_planner_package_share_directory = get_package_share_directory(
         "ddg_multi_robot_planner"
     )
