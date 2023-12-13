@@ -48,7 +48,7 @@ def generate_launch_description():
     )
     offset = LaunchConfiguration(
         "offset",
-        default="[0.7, 0.73]",  # X axis Y axis
+        default="[0.7, 0.60]",  # X axis Y axis
     )
     original_map_size = LaunchConfiguration(
         "original_map_size",
@@ -100,7 +100,8 @@ def generate_launch_description():
                 name="robot_mission_control_node_single",
                 output="screen",
                 parameters=[
-                    {"robot_namespace_param": robot2_namespace},
+                    # {"robot1_namespace_param": robot1_namespace},
+                    {"robot2_namespace_param": robot2_namespace},
                     {"mission_params": params},
                 ],
             ),
