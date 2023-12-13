@@ -4,6 +4,11 @@ commands to run the system:
 
 1. Run the docker:
 
+```sudo docker exec -it ddg-humble-container bash```
+
+(docker image: ddg-humblesim)
+(docker container: ddg-humble-container)
+
 Inside the docker in every terminal ensure to run: ```export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp```
 This has to be done in order to establish reliable communication between nodes.
 
